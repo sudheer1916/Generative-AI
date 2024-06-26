@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 from langchain_core.messages import AIMessage, HumanMessage
 
-api_key = "AIzaSyCpoEPjRXaVIEgJvVpHszDAhFIdmPDsz64"
+api_key = "#########Your API KEY###########"
 genai.configure(api_key=api_key)
 
 st.title("Conversational ChatBot Using Gemini AI")

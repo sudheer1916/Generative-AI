@@ -16,10 +16,10 @@ for message in st.session_state.chat_history:
     with st.chat_message("AI"):
       st.markdown(message.content)
   elif isinstance(message, HumanMessage):
-    with st.chat_message("Human")
+    with st.chat_message("Human"):
       st.markdown(message.content)
 
-api_key = "AIzaSyCpoEPjRXaVIEgJvVpHszDAhFIdmPDsz64"
+api_key = "#########Your API KEY###########"
 llm = GoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
 # llm = ChatGoogleGenerativeAI(model="gemini-pro", google_api_key=api_key)
 
