@@ -68,7 +68,7 @@ full_chain =(
     | llm
 )
 
-button = st.button("Search")
+button = st.button("Process")
 if button:
     res = full_chain.invoke({'question' : query_question})
     st.header(res)
